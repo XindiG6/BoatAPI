@@ -1,0 +1,29 @@
+{{!-- syntax for Bootstrap navbar sourced from:
+https://getbootstrap.com/docs/4.1/components/navbar/ --}}
+
+<h1 class="blue-text text-darken-2"> User Info</h1>
+<p class="flow-text z-depth-1" style="padding: 15px;">
+    This page shows the page with a new JWT issued by Google
+</p>
+<div>
+    <table class="striped centered">
+    <tbody>
+        <tr>
+            <th scope="col">Token</th>
+        </tr>
+        <tr>
+            <td style="word-wrap: break-word; max-width: 10px;">{{jwtToken}}</td>
+        </tr>
+        <tr>
+            <th scope="col">User Id</th>
+         </tr>
+        <tr>
+            <td style="word-wrap: break-word; max-width: 10px;">{{jwtSub}}</td>
+        </tr>
+    </tbody>
+    </table>
+    <br />
+    <blockquote>
+      Please don't refresh or use the back button, click <a href="/">here to go back</a>.
+    </blockquote>
+</div>
